@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427803240492",
+    "project_id": "pixie-image-app",
+    "storage_bucket": "pixie-image-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427803240492:android:5823fb15e64cf493080989",
+        "android_client_info": {
+          "package_name": "com.example.pixie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427803240492-7m444ivdpnoaqqqeunqhjmpngupumeug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs-oi6gu2HPFnqAOc0zz2m--SRjYCnmu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427803240492-7m444ivdpnoaqqqeunqhjmpngupumeug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
