@@ -1,6 +1,13 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:pixie/state/auth/backend/authenticator.dart';
 import 'firebase_options.dart';
+
+import 'dart:developer' as devtools show log;
+
+extension Log on Object {
+  void log() => devtools.log(toString());
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,12 +28,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       themeMode: ThemeMode.dark,
-      
       darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.blueGrey,
-        indicatorColor: Colors.blueGrey
-      ),
+          brightness: Brightness.dark,
+          primarySwatch: Colors.blueGrey,
+          indicatorColor: Colors.blueGrey),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
@@ -42,14 +47,31 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: const Text('Pixie'),
         centerTitle: true,
         elevation: 0,
       ),
-      body: const Center(
-        child: Text('Hello World'),
+      body: Center(
+        child: Column(
+          children: [
+            TextButton(
+                onPressed: () async {
+                  final result = await Authenticator().loginWithGoogle();
+                  result.log();
+                },
+                child: const Text('Sign in with Google')),
+            const SizedBox(
+              height: 20,
+            ),
+            TextButton(
+                onPressed: () {
+
+                  print("object");
+                }, child: const Text('Sign in with Facebook')),
+          ],
+        ),
       ),
     );
   }

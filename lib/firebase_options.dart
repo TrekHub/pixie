@@ -66,6 +66,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '427803240492',
     projectId: 'pixie-image-app',
     storageBucket: 'pixie-image-app.appspot.com',
+    androidClientId: '427803240492-n32fddijij9tjk4ja1k64derp4q8h2f4.apps.googleusercontent.com',
     iosClientId: '427803240492-cg3k4ikeeg18mfgruh3ngec84ila0ulr.apps.googleusercontent.com',
     iosBundleId: 'com.example.pixie',
   );
@@ -76,6 +77,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '427803240492',
     projectId: 'pixie-image-app',
     storageBucket: 'pixie-image-app.appspot.com',
+    androidClientId: '427803240492-n32fddijij9tjk4ja1k64derp4q8h2f4.apps.googleusercontent.com',
     iosClientId: '427803240492-cg3k4ikeeg18mfgruh3ngec84ila0ulr.apps.googleusercontent.com',
     iosBundleId: 'com.example.pixie',
   );
